@@ -1,0 +1,17 @@
+Authors: Alex Scott and Sebastian Val
+
+1) How much time did it take to crawl the entire domain? About 25 hours.
+First file obtained: Feb  3 02:49
+Last file obtained:  Feb  4 03:20
+
+2) How many unique pages did you find in the entire domain? 
+We detected 131,016 URLs which were assigned unique document IDs.
+Of those, we downloaded and obtained valid textual content for 42,926 which we saved to disk.
+
+3) What is the longest page in terms of number of words? (Don't count HTML markup as words.)
++-------------------------------------------------+------------+
+| url                                             | word_count |
++-------------------------------------------------+------------+
+| http://www.ics.uci.edu/~gbowker/classification/ |      31271 |
++-------------------------------------------------+------------+
+Obtained via: SELECT url,MAX(num_words) AS word_count FROM word_counts GROUP BY url ORDER BY word_count DESC LIMIT 1;
