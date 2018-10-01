@@ -20,12 +20,12 @@ public class Crawler {
     public static void main(String [] args) {
         Collection<String> urlCollection;
         if(args.length == 0) { // CRAWL ICS
-                urlCollection = CS121WebCrawler.doCrawl("http://www.ics.uci.edu", 0);			        
+            urlCollection = CS121WebCrawler.doCrawl("http://www.ics.uci.edu", 0);			        
         } else { // CRAWL ARGUMENT
-                urlCollection = CS121WebCrawler.doCrawl(args[0], 1);			
+            urlCollection = CS121WebCrawler.doCrawl(args[0], 1);			
         }
         for (String url : urlCollection) {
-                        System.out.println(url);
+            System.out.println(url);
         }
     }
 }
