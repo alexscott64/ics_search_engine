@@ -1,3 +1,4 @@
+CS121 - Search Engine Crawler
 Authors: Alex Scott and Sebastian Val
 
 1) How much time did it take to crawl the entire domain? About 25 hours.

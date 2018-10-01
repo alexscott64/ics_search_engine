@@ -95,7 +95,6 @@ public class CS121WebCrawler extends WebCrawler {
         logger.debug("Text length: {}", text.length());
         logger.debug("Html length: {}", html.length());
         logger.debug("Number of outgoing links: {}", links.size());
-        /* Logger.debug("JSON Repr: {}", CS121WebCrawler.json.pageToFile(page)); */
         
       }
       
@@ -151,7 +150,7 @@ public class CS121WebCrawler extends WebCrawler {
         RobotstxtConfig robotstxtConfig = new RobotstxtConfig();
         RobotstxtServer robotstxtServer = new RobotstxtServer(robotstxtConfig, pageFetcher);
         try {
-                crawlController = new CrawlController(crawlConfig, pageFetcher, robotstxtServer);
+            crawlController = new CrawlController(crawlConfig, pageFetcher, robotstxtServer);
         } catch (Exception e) {
             e.printStackTrace();
             System.exit(-1);
